@@ -1,0 +1,22 @@
+:root {
+    --background-color: rgba(255, 255, 255,0.7);
+    --background-color-highlight: rgba(255, 255, 255,0.8);
+    --background-color-noTransparent: rgba(255, 255, 255,1);
+
+    --navbar-logo:#000000;
+    --navbar-logo-transparent:rgba(0,0,0,0.4);
+    --navbar-logo-watermark:rgba(0,0,0,0.05);
+
+    --searchbar-bg:rgba(130, 130, 130, 0.3);
+    
+    --text-navbar:#b6b6b6;
+    --text-navbar-dark:#868686;
+
+    --card-background: #f3f3f3;
+
+    --login-button-color1: #743ad5;
+    --login-button-color2: #d53a9d;
+
+    --herolowerbarButton:rgba(84, 44, 155, 0.8);
+    --herolowerbarButton-hover:rgba(84, 44, 155, 1);
+}

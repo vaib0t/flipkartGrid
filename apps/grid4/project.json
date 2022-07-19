@@ -18,7 +18,7 @@
         "assets": ["apps/grid4/src/favicon.ico", "apps/grid4/src/assets"],
         "styles": ["apps/grid4/src/styles.css"],
         "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "webpackConfig": "apps/grid4/webpack.config.js"
       },
       "configurations": {
         "development": {
