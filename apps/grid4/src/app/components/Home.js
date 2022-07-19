@@ -1,6 +1,5 @@
 /* Library import */
 import {useState,useEffect} from 'react';
-import Navbar from '../Navbar';
 
 /* Dependency import */
 import './css/Home.css';
@@ -9,10 +8,11 @@ import './css/Home.css';
 
 /* Asset imports */
 
-function Home(prop){
+function Home(){
+
     return(
         <div className='Home'>
-            <Navbar holderId = {prop.currentAccount} />
+
         </div>
     );
 }

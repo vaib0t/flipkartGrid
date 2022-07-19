@@ -7,12 +7,15 @@ import './css/LoginButton.css';
 
 /* Asset imports */
 
-function LoginButton(prop){
+function LoginButton({
+    Acnt,
+    ...rootDOMAttributes
+}){
 
     return(
-        <div className='LoginButton'>
+        <div className='LoginButton' {...rootDOMAttributes}>
             <div className='LoginButtonBorder'>
-                {prop.Acnt}
+                {Acnt}
             </div>
         </div>
     );

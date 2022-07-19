@@ -1,42 +1,43 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Route, Router, Routes } from 'react-router-dom';
 import { useState , useEffect} from 'react';
-import Home from "./components/HomePage/Home";
-import Login from "./components/LoginPage/LoginPage";
+import {useAsyncEffect} from 'use-async-effect'
 import Web3 from 'web3';
-import { strict } from 'assert';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 
 export function App() {
-  const [IsConnected, setIsConnected] = useState(false);
-  const [currentAccount, setcurrentAccount] = useState("");
+  const [currentAccount, setAccount] = useState("");
 
-  const onLogin = async (provider:string) => {
-    const web3 = new Web3(provider);
-    const accounts = await web3.eth.getAccounts()
-    if(accounts.length == 0){
-      console.log("Please connect to MetaMask")
-    }else if(accounts[0] !== currentAccount){
-      setcurrentAccount(accounts[0]);
-      setIsConnected(true);
+  const ConnectMetamask = async () => {
+		if(window.ethereum){
+			const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545');
+			const accounts = await web3.eth.requestAccounts();
+			setAccount(accounts[0]);
+		}else{
+			alert("PLEASE INSTALL METAMASK!");
+		}
+	}
+
+  useAsyncEffect(async () => {
+    try{
+      await ConnectMetamask();
+    }catch{
+      console.log("connecting");
     }
-  };
-
-
-  const onLogout = () => {
-    setIsConnected(false);
-  };
+  },[]);
 
   return (
     <>
+      <Navbar
+        holderId={(currentAccount!=='')?currentAccount:"Connect Wallet"}
+        ConnectMetamask={ConnectMetamask}
+      />
       <Routes>
         <Route path="/" element={
-          <>
-            {!IsConnected && <Login onLogin={onLogin} onLogout={onLogout} />}
-            {IsConnected && <Home currentAccount={currentAccount}/>}
-          </>
+          <Home/>
         }/>
-        {/* <Route path="login" element={<Login />}/> */}
       </Routes>
     </>
   );

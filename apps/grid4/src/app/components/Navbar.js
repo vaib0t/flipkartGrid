@@ -5,7 +5,6 @@ import {useState,useEffect} from 'react';
 import './css/Navbar.css';
 import useWindowDimensions from "./hooks/useWindowSize";
 import {Link, useHref} from "react-router-dom";
-import { injected } from './wallet/connection';
 import { useWeb3React } from '@web3-react/core';
 /* Component import */
 import Searchbar from './Searchbar/Searchbar';
@@ -14,8 +13,12 @@ import LoginButton from './LoginButton';
 /* Asset imports */
 
 
-function Navbar(prop){
+function Navbar({
+    holderId,
+    ConnectMetamask
+}){
     const {screenHeight,screenWidth} = useWindowDimensions();
+    const [Loading, setLoading] = useState(false);
 
 
     const changeNavbarColor = () => {
@@ -50,7 +53,8 @@ function Navbar(prop){
                 (screenWidth>900)?
                 <div className='desktopLoginButtonContainer'>
                     <LoginButton
-                        Acnt = {prop.holderId}
+                        onClick={async() => await ConnectMetamask()}
+                        Acnt = {holderId}
                     />
                 </div>
                 :''
