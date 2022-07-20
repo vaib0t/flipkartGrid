@@ -5,8 +5,8 @@ import {useAsyncEffect} from 'use-async-effect'
 import Web3 from 'web3';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-
-
+import Retailer from "./components/Retailer/RetailerProfilePage"
+import AddProduct from './components/Retailer/AddingProduct';
 export function App() {
   const [currentAccount, setAccount] = useState("");
 
@@ -37,6 +37,12 @@ export function App() {
       <Routes>
         <Route path="/" element={
           <Home/>
+        }/>
+        <Route path="/retailer" element={
+          <Retailer/>
+        }/>
+        <Route path='/addproduct' element={
+          <AddProduct/>
         }/>
       </Routes>
     </>

@@ -1,0 +1,147 @@
+@import url(../../css/fontMaster.css);
+@import url(../../css/colorMaster.css);
+
+.RetailerProfilePage{
+    margin-top: 8vh;
+    overflow: hidden;
+
+}
+.bannerImageContainer{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+}
+.bannerImg{
+    object-fit: cover;
+    width: 100%;
+}
+
+.userContainer{
+    padding-left: 1rem;
+padding-right: 1rem;
+width: 100vw;
+}
+
+.midRow{
+    display: flex;
+    color: black;
+    justify-content: center;
+    width: 100%;
+}
+
+.endRow{
+display: flex;
+justify-content: flex-end;
+max-width: 100%;
+}
+
+.userInfo{
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 9999px;
+    border-width: 2px;
+    margin-top: -4rem;
+}
+
+.socialIconsContainer{
+    display: flex;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: -2rem;
+    padding-right: 7%;
+}
+
+.socialIconsWrapper{
+    width: 11rem;
+}
+
+.socialIconsContent{
+    width: 100%;
+    display: flex;
+    border-style: solid;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    color: 1.4rem;
+}
+
+.socialIcon{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.divider{
+    border-right-width: 2px;
+    border-style: solid;
+}
+
+.title{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.createdBy{
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.statsContainer{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    border-radius: 0.75rem;
+    border-width: 1px;
+    width: 44vw;
+}
+
+.collectionStat{
+    width: 25%;
+}
+
+.statValue{
+    display: flex;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ethLogo{
+    margin-right: 0.5rem;
+    height: 1.5rem;
+}
+
+.statName{
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+    width: 100%;
+}
+
+.description{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    flex-wrap: wrap;
+    color: #8a939b;
+}
+
+.Cards{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-around;
+}
