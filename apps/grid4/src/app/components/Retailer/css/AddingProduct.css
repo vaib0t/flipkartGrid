@@ -1,4 +1,20 @@
 .AddingProduct{
-    margin-top: 19vh;
-    margin-left: 10vw;
+    margin-top: 16vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.Box{
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.MuiButtonBase-root{
+    background-color: black;
+}
+
+.MuiButtonBase-root:hover{
+    background-color: inherit;
+    color: black;
 }
