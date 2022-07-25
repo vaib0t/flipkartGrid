@@ -1,0 +1,90 @@
+@import url(../../css/colorMaster.css);
+@import url(../../css/fontMaster.css);
+
+.DesktopCard {
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundCover{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(255,255,255,0.8) 100%);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.cardContent{
+    z-index: 2;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper-cardContent{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper-cardContent-left {
+    height: 90%;
+    width: 60%;
+    background-color: aliceblue;
+}
+
+.upper-cardContent-right {
+    height: 90%;
+    width: 35%;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.lowerbar-cardContent{
+    background-color: aliceblue;
+    padding: 0em 5%;
+    height: 15%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lowerbarText {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.lowerbarButton {
+    padding: 1em;
+    background-color: var(--herolowerbarButton);
+    border-radius: 10px;
+    font-weight: 600;
+    color: var(--background-color-noTransparent);
+    cursor: pointer;
+}
+
+.lowerbarButton:hover {
+    background-color: var(--herolowerbarButton-hover);
+}

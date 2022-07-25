@@ -1,0 +1,125 @@
+
+
+.wrapper{
+    padding-top: 8vh;
+    position: relative;
+}
+
+.container::before{
+    content: none;
+    background-color: #EF4444;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(https://openseauserdata.com/files/zoonies_featured_image_4Z8jsfR.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.contentWrapper{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.copyContainer{
+    width: 50%;
+}
+
+.auth{
+    color: #1868b7;
+}
+
+.title{
+    position: relative;
+    color: #ffffff;
+    font-weight: 600;
+    color: 46px;
+
+}
+
+.description{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #8a939b;
+    margin-top: 0.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.ctaContainer{
+    display: flex;
+}
+
+.accentedButton{
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 1.25rem;
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: #2181e2;
+
+}
+
+.accentedButton::hover{
+    background: #42a0ff;
+}
+
+.button{
+
+}
+
+.cardContainer{
+    border-radius: 3rem;
+}
+
+.cdCont{
+    border-top-left-radius: 0.5rem;
+border-top-right-radius: 0.5rem;
+}
+
+.infoContainer{
+    display: flex;
+    padding: 1rem;
+    color: #ffffff;
+    align-items: center;
+    height: 5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background: #313338;
+}
+
+.author{
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.name{
+
+}
+.inforIcon{
+    display: flex;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    align-items: center;
+    color: #8a939b;
+
+}

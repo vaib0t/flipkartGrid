@@ -5,14 +5,14 @@ import {useState,useEffect} from 'react';
 import './css/Home.css';
 
 /* Component import */
-
+import Slider from './Hero/Hero'
 /* Asset imports */
 
 function Home(){
 
     return(
         <div className='Home'>
-
+            <Slider/>
         </div>
     );
 }
