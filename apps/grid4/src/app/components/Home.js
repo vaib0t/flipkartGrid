@@ -6,6 +6,7 @@ import './css/Home.css';
 
 /* Component import */
 import Slider from './Hero/Hero'
+import DesktopCard from './Hero/DesktopCard';
 /* Asset imports */
 
 function Home(){

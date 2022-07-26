@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Retailer from "./components/Retailer/RetailerProfilePage"
 import AddProduct from './components/Retailer/AddingProduct';
+import ProductPage from './components/ProductPage/ProductPage'
 export function App() {
   const [currentAccount, setAccount] = useState("");
 
@@ -43,6 +44,9 @@ export function App() {
         }/>
         <Route path='/addproduct' element={
           <AddProduct/>
+        }/>
+        <Route path='/productpage' element={
+          <ProductPage/>
         }/>
       </Routes>
     </>
