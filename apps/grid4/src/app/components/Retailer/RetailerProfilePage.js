@@ -5,7 +5,7 @@ import {useState,useEffect} from 'react';
 import './css/RetailerProfilePage.css';
 
 /* Component import */
-import Card from "./Card"
+import Card from "./Card1"
 /* Asset imports */
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -55,23 +55,23 @@ function RetailerHomePage(){
                     </div>
                 </div>
                 <div className='midRow'>
-                    <div className='title'> Bulla ki dhukhan
+                    <div className='title'> Chirag Sidana
                     </div>
                 </div>
                 <div className='midRow'>
                     <div className='createrBy'>
-                    Created By Bulla
+                    Created By Chirag
                         <span className='text'></span>
                     </div>
                 </div>
                 <div className='midRow'>
                     <div className='statsContainer'>
                         <div className='collectionStat'>
-                            <div className='statValue'>19</div>
+                            <div className='statValue'>3</div>
                             <div className='statName'>items</div>
                         </div>
                         <div className='collectionStat'>
-                            <div className='statValue'>bulla</div>
+                            <div className='statValue'>Chirag</div>
                             <div className='statName'>owners</div>
                         </div>
                         <div className='collectionStat'>
@@ -97,16 +97,17 @@ function RetailerHomePage(){
                     </div>
                 </div>
                 <div className='midRow'>
-                    <div className='description'>bulla ki dhulkan mei welcome </div>
+                    <div className='description'>Welcome to Chirag's collection </div>
                 </div>
             </div>
             <div className='Cards'>
             <Card
                     title = 'University Blue'
-                    price = '50'
+                    price = '149'
                     link = ''
-                    description = 'good shoes'
+                    description = 'It makes use of a familiar palette that gives the nod to Michael Jordan UNC alma mater.'
                     image = 'https://cdn.discordapp.com/attachments/751494279586775124/1003268377894207578/nike2.png'
+                    button = 'Valid till Aug-2024'
                 />
                 <Card
                     title = 'A|X Sport Grid'
@@ -114,6 +115,7 @@ function RetailerHomePage(){
                     link = ''
                     description = 'good watch'
                     image = 'https://cdn.discordapp.com/attachments/751494279586775124/1003265661188976741/png2-1.png'
+                    button = 'Valid till Dec-2022'
                 />
                 <Card
                     title = 'Led Zipplin'
@@ -121,6 +123,7 @@ function RetailerHomePage(){
                     link = ''
                     image = 'https://cdn.discordapp.com/attachments/751494279586775124/1003267588547158027/swesgir.png'
                     description = 'led Zepllin hoodie'
+                    button = 'Valid till July-2023'
                 />
             </div>
         </div>
