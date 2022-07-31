@@ -8,6 +8,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
     background: transparent;
@@ -18,12 +19,17 @@
     text-decoration: none;
 }
 
-.Navbar-Heading {
+/* .Navbar-Heading {
     font-family: Bodoni-Medium;
     margin: 1.0em;
     font-size: 1.7em;
     font-weight: 600;
     color: var(--navbar-logo);
+} */
+.Navbar-Heading > img{
+    padding-top: 1vh;
+    height: 13vh;
+    width: 6vw;
 }
 
 .desktopLoginButtonContainer {

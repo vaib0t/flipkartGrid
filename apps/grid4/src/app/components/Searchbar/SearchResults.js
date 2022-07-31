@@ -1,6 +1,6 @@
 /* Library import */
 import {useState,useEffect} from 'react';
-
+import  {Link} from 'react-router-dom'
 /* Dependency import */
 import './css/SearchResults.css';
 
@@ -15,7 +15,7 @@ function SearchResults({
     showResults
 }){
 
-    const numofResults = 3;
+    const numofResults = 1;
 
 
     return(
@@ -29,9 +29,9 @@ function SearchResults({
                 [...Array(numofResults)].map(() => (
                     <>
                         <ResultItemSquare
-                            imageSrc={"https://avatars.githubusercontent.com/u/61341517?v=4"}
-                            itemHeading={"Hello"}
-                            itemDescription={"by Parv Gupta"}
+                            imageSrc={"https://cdn.discordapp.com/attachments/751494279586775124/1003267140226383922/unknown.png"}
+                            itemHeading={"Jordans"}
+                            itemDescription={"University Blue"}
                         />
                     </>
                 ))
@@ -41,11 +41,12 @@ function SearchResults({
             {
                 [...Array(numofResults)].map(() => (
                     <>
+                    <Link to = '/buy'>
                         <ResultItemRounded
-                            imageSrc={"https://avatars.githubusercontent.com/u/61341517?v=4"}
-                            itemHeading={"Hello"}
-                            itemDescription={"by Parv Gupta"}
-                        />
+                            imageSrc={"https://cdn.discordapp.com/attachments/751494279586775124/1003283616094240828/gg3.png"}
+                            itemHeading={"Jordans"}
+                            // itemDescription={"by Parv Gupta"}
+                        /></Link>
                     </>
                 ))
             }

@@ -43,7 +43,7 @@ function Navbar({
             {/* heading */}
             <Link to='/'>
                 <div className='Navbar-Heading'>
-                    E-commerce
+                    <img src =  'https://cdn.discordapp.com/attachments/751494279586775124/1003286875718557716/beaerth.png'/>
                 </div>
             </Link>
             {/* searchbar */}

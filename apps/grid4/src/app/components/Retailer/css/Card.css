@@ -42,7 +42,7 @@ img {
 
 /*===== CARD =====*/
 .container {
-  height: 88vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,7 @@ img {
 }
 
 .card__title {
+  padding-top: 3vh;
   font-size: var(--h1-font-size);
   color: var(--first-color);
   margin-bottom: .5rem;

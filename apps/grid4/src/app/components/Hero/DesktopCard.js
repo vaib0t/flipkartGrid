@@ -1,6 +1,6 @@
 /* Library import */
 import {useState,useEffect} from 'react';
-
+import { Link } from 'react-router-dom';
 /* Dependency import */
 import './css/DesktopCard1.css';
 
@@ -15,7 +15,7 @@ function DesktopCard1({
 }){
     const style = {
         wrapper: `relative`,
-        container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('${bgColor}')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+        container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('${bgColor}')] before:bg-cover before:bg-center before:opacity-70 `,
         contentWrapper: `flex h-screen relative justify-center flex-wrap items-center place-content-stretch`,
         copyContainer: `w-1/2`,
         title: `relative text-white text-[46px] font-semibold`,
@@ -36,13 +36,13 @@ function DesktopCard1({
             <div className={style.contentWrapper}>
               <div className={style.copyContainer}>
                 <div className={style.title}>
-                  Discover, collect, and sell extraordinary NFTs
+                  {/* Discover, collect, and sell extraordinary NFTs */}
                 </div>
                 <div className={style.description}>
-                  OpenSea is the world&apos;s first and largest NFT marketplace
+                  {/* OpenSea is the world&apos;s first and largest NFT marketplace */}
                 </div>
                 <div className={style.ctaContainer}>
-                  <button className={style.accentedButton}>Explore</button>
+                  <Link to='/buy'><button className={style.accentedButton}>Explore</button></Link>
                   <button className={style.button}>Add Product</button>
                 </div>
               </div>
@@ -60,3 +60,4 @@ function DesktopCard1({
 }
 
 export default DesktopCard1;
+

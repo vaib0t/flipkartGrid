@@ -101,11 +101,27 @@ function RetailerHomePage(){
                 </div>
             </div>
             <div className='Cards'>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+            <Card
+                    title = 'University Blue'
+                    price = '50'
+                    link = ''
+                    description = 'good shoes'
+                    image = 'https://cdn.discordapp.com/attachments/751494279586775124/1003268377894207578/nike2.png'
+                />
+                <Card
+                    title = 'A|X Sport Grid'
+                    price = '170'
+                    link = ''
+                    description = 'good watch'
+                    image = 'https://cdn.discordapp.com/attachments/751494279586775124/1003265661188976741/png2-1.png'
+                />
+                <Card
+                    title = 'Led Zipplin'
+                    price = '100'
+                    link = ''
+                    image = 'https://cdn.discordapp.com/attachments/751494279586775124/1003267588547158027/swesgir.png'
+                    description = 'led Zepllin hoodie'
+                />
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 /* Library import */
 import {useState,useEffect} from 'react';
-
+import { Link } from 'react-router-dom';
 /* Dependency import */
 import './css/SearchResults.css';
 

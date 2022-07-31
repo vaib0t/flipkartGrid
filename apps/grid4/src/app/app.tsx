@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Retailer from "./components/Retailer/RetailerProfilePage"
 import AddProduct from './components/Retailer/AddingProduct';
 import ProductPage from './components/ProductPage/ProductPage'
+import Buy from './components/Buy'
 export function App() {
   const [currentAccount, setAccount] = useState("");
 
@@ -47,6 +48,9 @@ export function App() {
         }/>
         <Route path='/productpage' element={
           <ProductPage/>
+        }/>
+        <Route path='/buy' element={
+          <Buy/>
         }/>
       </Routes>
     </>
